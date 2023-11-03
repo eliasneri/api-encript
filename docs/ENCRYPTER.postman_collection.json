@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "2f94c364-e1f6-4e35-bae0-494db6e1e757",
+		"name": "ENCRYPTER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19971194",
+		"_collection_link": "https://agsi-sistemas.postman.co/workspace/AGSI---Workspace~41e74b77-0f25-449a-83b3-930cb0aeaf94/collection/19971194-2f94c364-e1f6-4e35-bae0-494db6e1e757?action=share&source=collection_link&creator=19971194"
+	},
+	"item": [
+		{
+			"name": "Encrypter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"toEncrypt\": \"apenas um teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9195/crypt/encrypter",
+					"host": [
+						"localhost"
+					],
+					"port": "9195",
+					"path": [
+						"crypt",
+						"encrypter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Decrypter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descrypt\": \"kgI/MRRafxTiBp+mB+6vn2wMEd5nlMrJ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9195/crypt/descrypter",
+					"host": [
+						"localhost"
+					],
+					"port": "9195",
+					"path": [
+						"crypt",
+						"descrypter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Load Context.Json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9195/json/load",
+					"host": [
+						"localhost"
+					],
+					"port": "9195",
+					"path": [
+						"json",
+						"load"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Load Context.Json Descrypt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9195/json/load/descrypt",
+					"host": [
+						"localhost"
+					],
+					"port": "9195",
+					"path": [
+						"json",
+						"load",
+						"descrypt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Connection Hikary to Database",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9195/conn",
+					"host": [
+						"localhost"
+					],
+					"port": "9195",
+					"path": [
+						"conn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Connection DataSource",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9195/conn/datasource",
+					"host": [
+						"localhost"
+					],
+					"port": "9195",
+					"path": [
+						"conn",
+						"datasource"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
