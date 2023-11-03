@@ -1,4 +1,4 @@
-# Projeto de Criptografia  e Descryptografia utilizando a lib JSYPT
+# Projeto de Criptografia  e Descryptografia utilizando a lib Jasypt
 
 #### Definir variavel de ambiente: SECRET_KEY
 
