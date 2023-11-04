@@ -4,7 +4,7 @@
 
 Repositório Maven
 
-```json
+```xml
 <dependency>
     <groupId>org.jasypt</groupId>
     <artifactId>jasypt</artifactId>
