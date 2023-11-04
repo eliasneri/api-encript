@@ -15,7 +15,7 @@ Repositório Maven
 #### Ler um arquivo que configuração .JSON com informações criptografadas e converter em um objeto.
 Utilizado para este processo a dependência GSON
 
-```json
+```xml
 <dependency>
     <groupId>com.google.code.gson</groupId>
     <artifactId>gson</artifactId>
@@ -34,11 +34,11 @@ Encrypt de Propriedades:
 ```
 mysecretpassword= DEC(password)
 ```
-<strong>Execute no terminal:
+<strong>Execute no terminal:</strong>
 ```
 $ mvn jasypt:encrypt-value -Djasypt.encryptor.password=secretkey
 ```
-Após a execução, a propriedade(s) defina com DEC, serão criptografadas:
+Após a execução, a(s propriedade(s) com DEC, serão criptografadas:
 ```
 mysecretpassword= ENC(XwqTvw9e+17bTAqBZ6YN0C9XC/nSjlb79IBGfvnD8gxzeG6DOgQE5OUE6WTc/jzZ)
 ```
